@@ -1,0 +1,22 @@
+@import 'setup';
+@import 'utils';
+@import 'typography';
+
+//Componants
+@import 'nav';
+@import 'header';
+
+body {
+    max-width: 1920px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// img {
+//     width: 100%;
+// }
+
+
