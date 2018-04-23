@@ -5,18 +5,24 @@
 //Componants
 @import 'nav';
 @import 'header';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+@import 'section6';
 
 body {
     max-width: 1920px;
 }
 
 .wrapper {
-    max-width: 1200px;
+    width: 70%;
     margin: 0 auto;
 }
 
-// img {
-//     width: 100%;
-// }
+section {
+    width: 100%;
+}
 
 

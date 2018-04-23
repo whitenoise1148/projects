@@ -1,0 +1,66 @@
+// Beginning of Section-2 Styles
+
+.section-2 {
+    margin: 100px 0;
+}
+
+.section-2__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.section-2__wrapper__div-column {
+    flex: 1 1 calc(33.3% - 50px);
+    margin: 0 100px;
+    position: relative;
+
+    h3.section-2__h3-inner--top, h3.section-2__h3-inner--bottom {
+        background: #FCFCFC;
+        display: inline-block;
+        font-size: 28px;
+        padding: 10px 20px;
+        position: absolute;
+        left: -60px;
+    }
+
+    h3.section-2__h3-inner--top {
+        bottom: 20%;
+    }
+
+    h3.section-2__h3-inner--bottom {
+        bottom: 10%;
+    }
+}
+
+// Stylings for the individual columns in section2
+
+// Styling ::before text for columns 1-3 
+.section-2__wrapper__div-column::before {
+    font-size: 16px;
+    font-family: $secondary-font;
+    color: $primary-color;
+    transform: rotate(270deg);
+    position: absolute;
+    left: -100px;
+    bottom: 50%;
+}
+
+// Add ::before text
+.div-column1::before {
+    content: 'Diverse Products';
+}
+
+.div-column2::before,
+.div-column3::before  {
+    content: 'Unique Novelties';
+}
+
+.div-column2 {
+    position: relative;
+
+    img {
+        outline: 5px solid white;
+        outline-offset: -35px;
+    }  
+} 
