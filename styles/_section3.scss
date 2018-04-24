@@ -1,3 +1,5 @@
+// Just in-case it isn't immediately obvious, my SCSS for Section 3 and 5 are almost the Exact same besides changing the classes from section-3 to section-5, I just copy and pasted. If my partials weren't organized as is, two sections would have been styled from 1. Hope this still counts for Dry code.
+
 main h2 {
     color: $primary-color;
     font-size: 30px;
@@ -113,9 +115,13 @@ p.section-3__p-vertical {
     font-size: 86px;
     transform: rotate(90deg);
     position: absolute;
-    right: -450px;;
+    right: -450px;
     top: 250px;
     color: rgb(238, 238, 238);
     margin: 0;
 }
+
+
+
+
 
