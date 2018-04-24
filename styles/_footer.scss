@@ -1,0 +1,122 @@
+footer {
+    width: 100%;
+    text-decoration: none;
+
+    h3 {
+        color: #d4bd52;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $primary-font;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: $secondary-font;
+    }
+
+    a, p {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.footer-images-container {
+    display: flex;
+    flex-flow: row wrap;
+
+    .footer__image-container {
+        width: 50%;
+    }
+}
+
+.footer-content-container {
+    background: #343434;
+    padding-top: 150px;
+    
+    .footer-content-container__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        h3 {
+
+        }
+    }
+    
+    .footer-content__column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 calc(25% - 50px);
+
+        .instagram-images {
+            display: flex;
+            flex-flow: row wrap;
+
+            img {
+                margin: 0 25px 10px 0;
+                width: calc(33% - 25px);
+            }
+        } 
+
+
+    }
+}
+
+.footer-content__column1 {
+    flex-flow: column nowrap;
+}
+
+.footer-content__column2 {
+    flex-flow: column nowrap;
+    
+    .footer-content__column2__link-container  {
+        display: flex;
+        flex-flow: row wrap;
+        a {
+            border: 1px solid white;
+            padding: 5px;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.footer-content__column3 {
+    flex: 2 2 25%;
+}
+
+.footer-content__column4 {
+    flex: 0 1 25%;
+}
+
+.footer-content__column4__input-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.follow-us-on h3 {
+    align-content: center;
+    margin: 100px 0;
+}
+
+.footer-content-social-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+    a {
+
+    }
+}
+
+.super-mega-bottom-footer {
+    background: #3d3d3d;
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
