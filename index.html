@@ -94,8 +94,12 @@
             <div class="section-1__div-image">
                 <img src="images/main-image-1.png" alt="">
                 <div class="section-1__div-image__div-scroll">
-                    <i class="section-1__div-image__div-scroll--backwards"></i>
-                    <i class="section-1__div-image__div-scroll--forwards"></i>
+                    <div class="div-scroll__div-left">
+                        <img src="images/back.png" alt="" class="scroll-left">
+                    </div>
+                    <div class="div-scroll__div-right">
+                        <img src="images/next.png" alt="" class="scroll-right">
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,6 +190,7 @@
                 <div class="section-4__container">
                     <div class="section-4__container__image-container">
                         <img src="images/main-image-2.png" alt="">
+                        <img src="images/border.png" alt="" class="section-4__container__border">
                     </div>
                     <div class="section-4__container__div-content">
                         <h2 class="section-4__container__div-content__h2">Salvatore Ferragarno Lookbook Spring/Summer 2016</h2>
@@ -236,8 +241,6 @@
                 </div>
                 <p class="section-5__p-vertical">Spring/Summer</p>
             </section>
-            
-            <!-- USE FLEXBOX FOR THIS SECTION, FOR RESPONSIVE USE CHANGE THE ORDER OF ITEMS AT BREAK POINTS TO KEEP A BETTER AND MORE CONSISTENT LAYOUT  -->
             <section class="section-6">
                 <h2 class="section-6__h2">Our Blog</h2>
                 <div class="section-6__blog-container section-6__blog-container1">
@@ -262,8 +265,12 @@
                     <div class="section-6__image-container section-6__image-container2">
                         <img src="images/blog-2.png" alt="">
                         <div class="image-buttons">
-                            <img src="images/arrow-left.png" alt="" class="image-buttons left">
-                            <img src="images/arrow-right.png" alt="" class="image-buttons right">
+                            <div class="arrow-left-container">
+                                <img src="images/back.png" alt="" class="image-button-left">
+                            </div>
+                            <div class="arrow-right-container">
+                                <img src="images/next.png" alt="" class="image-button-right">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -273,13 +280,11 @@
     <footer>
         <div class="footer-images-container">
             <div class="footer__image-container footer__image-container1">
-                <img src="images/footer-1.png" alt="">
                 <h2>Rethink Your Design</h2>
                 <h3>Minimal & Modern Look</h3>
                 <a href="#">Discover More</a>
             </div>
             <div class="footer__image-container footer__image-container2">
-                <img src="images/footer-2.png" alt="">
                 <h2>We Are Fashion Shop</h2>
                 <h3>Revolutionary Concepts</h3>
                 <a href="#">Shop Now</a>
@@ -322,19 +327,34 @@
                     <h3>newsletter</h3>
                     <p>Signup for our Newsletter & Events</p>
                     <div class="footer-content__column4__input-container">    
-                        <input type="email" placeholder="Email address">
-                        <input type="submit" placeholder="submit">
+                        <input type="email" placeholder="Email address" class="input-email">
+                        <input type="submit" value="Submit" class="input-submit">
                     </div>
                 </div>
             </div>
             <h3 class="follow-us-on">follow us on</h3>
             <div class="footer-content-social-container">
-                <a href="" class="footer-content-link">Behance</a>
-                <a href="" class="footer-content-link">Dribble</a>
-                <a href="" class="footer-content-link">Themeforest</a>
-                <a href="" class="footer-content-link">Pinterest</a>
-                <a href="" class="footer-content-link">Facebook</a>
-                <a href="" class="footer-content-link">Twitter</a>
+                <ul class="footer-content-social-container__ul">
+                    <li>
+                        <a href="" class="footer-content-link">Behance</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-content-link">Dribble</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-content-link">Themeforest</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-content-link">Pinterest</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-content-link">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-content-link">Twitter</a>
+                    </li>
+                </ul>
+                
             </div>
         </div>
         <div class="super-mega-bottom-footer">

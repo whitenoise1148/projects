@@ -15,7 +15,7 @@ header,
 .header-profile,
 .header-dropdown {
     display: flex;
-    flex: 1 1;
+
 }
 // Give width to maxshop logo container to
 .header-wrapper__div-left {
@@ -33,11 +33,12 @@ header,
 
     ul {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         
         li {
             display: flex;
+            margin-right: 25px;
 
             a {
                 text-decoration: none;
@@ -90,6 +91,7 @@ a.shop-link::after {
     flex-flow: row wrap;
     flex: 1 1 30%;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .header-dropdown {
@@ -150,6 +152,7 @@ a.shop-link::after {
         flex-flow: row wrap;
 
         li {
+            padding-left: 10px;
 
             a {
                 margin-right: 10px;
@@ -168,14 +171,14 @@ a.shop-link::after {
         position: absolute;
         width: 14px;
         top: 0px;
-        left: 8px;
+        left: 17px;
     }
 
     img.quantity-number {
         position: absolute;
         width: 5px;
         top: 4px;
-        left: 13px;
+        left: 22px;
     }
 }
 
@@ -199,4 +202,121 @@ a.shop-link::after {
 
 .header-wrapper__img--logo {
     padding-left: 10%;
+}
+
+@media (max-width: 1700px) {
+    header {
+
+        .header-wrapper {
+            justify-content: space-around;
+
+            .header-wrapper__div-left {
+                flex: 0 1 350px;
+            }
+
+            .header-wrapper__div-nav-container {
+                flex: 1 0 600px;
+            }
+
+            .header-wrapper__div-container {
+                flex: 0 1 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    header {
+        .header-wrapper {
+            flex-flow: row wrap;
+
+            .header-wrapper__div-left {
+                flex: 0 1 300px;
+            }
+            
+            .header-wrapper__div-nav-container {
+                flex: 1 0 425px;
+            }
+            
+            .header-wrapper__div-container {
+                flex: 0 1 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    header {
+        .header-wrapper {
+            max-height: 100vh;
+            padding-top: 50px;
+            padding-bottom: 0;
+            flex-flow: row wrap;
+            
+            .header-wrapper__div-left {
+                flex: 1 0 300px;
+                padding-left: 0;
+
+                .header-wrapper__img--logo {
+                    padding-left: 25px;
+                }
+
+            }
+            
+            .header-wrapper__div-nav-container {
+                flex-direction: column;
+                flex: 1 0 100%;
+                justify-content: space-between;
+            }
+            .header__nav {
+                flex: 1 0 100%;
+                padding: 50px;
+            }
+            
+            .header-wrapper__div-container {
+                flex: 1 0 100%;
+                justify-content: space-between;
+                padding: 0 12%;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 635px) {
+    header {
+        .header-wrapper {
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            width: 100%;
+
+            .header-wrapper__div-left {
+                background: gray;
+                flex: 1 0 100%;
+                padding: 50px;
+
+                .header-wrapper__img--logo {
+                    width: 225px;
+                }
+
+            }
+            .header-wrapper__div-nav-container {
+
+                .header-wrapper__nav {
+                    
+                    .header__nav__ul {
+                        flex-flow: column;
+                        
+                    }
+                }
+                .header-wrapper__div-container {
+                    justify-content: space-between;
+                    flex: 1 0 100%;
+
+                }
+
+            }
+        }
+    }
 }

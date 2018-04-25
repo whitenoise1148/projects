@@ -48,6 +48,7 @@ main p {
 .section-3__div-column-container {
     display: flex;
     justify-content: space-between;
+    flex-flow: row nowrap;
     
     img {
         width: 100%;
@@ -119,3 +120,119 @@ p.section-3__p-vertical {
     margin: 0;
 }
 
+@media (max-width: 1500px) {
+    .section-3__div-column img.bag {
+    max-width: 30px;
+    max-height: 40px;
+    background: rgb(20, 20, 20);
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    }
+
+    .section-3__div-column img.different {
+        background: rgb(190, 167, 62);
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-3 {
+        margin-bottom: 100px;
+    }
+
+    .section-3__p-vertical {
+        display: none;
+    }
+
+
+    
+    .section-3__div-column {
+        
+        h4 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        h3 {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-3 {
+        margin-bottom: 50px;
+    }
+
+    .section-3__top-container {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .main {
+        background: #343434;
+    }
+    
+    .section-3__div-column-container {
+        flex-flow: row wrap;
+    }
+    
+    .section-3__div-column {
+    width: 225px;
+    margin-right: 0;
+    position: relative;
+    background: #343434;
+    }
+    h4, h3 {
+        color: #d4bd52;
+    }
+}
+
+@media (max-width: 650px) {
+    
+    
+    .section-3__h3 {
+        color: white;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .section-3__top-container p{
+        text-align: center;
+    }
+
+    .section-3__div-column {
+    width: 100%;
+    text-align: center;
+        p {
+            font-size: 16px;
+        } 
+        
+        h4 {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    }
+
+    div.prev-next {
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        
+        a {
+            font-size: 40px;
+        }
+    }
+    .section-3__div-column img.bag {
+    max-width: 45px;
+    max-height: 50px;
+    }
+}

@@ -18,12 +18,19 @@ body {
 }
 
 .wrapper {
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
 section {
     width: 100%;
 }
+
+@media (max-width: 800px) {
+    section {
+        margin-bottom: 0;
+    } 
+}
+
 
 
